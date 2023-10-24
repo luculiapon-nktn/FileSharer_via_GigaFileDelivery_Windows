@@ -104,6 +104,46 @@ files = [
 ]
 
 [[package]]
+name = "dmgbuild"
+version = "1.6.1"
+description = "macOS command line utility to build disk images"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "dmgbuild-1.6.1-py3-none-any.whl", hash = "sha256:45dba6af4a64872c6a91eb335ebeaf5e1f4f4f39c89fd77cf40e841bd1226166"},
+    {file = "dmgbuild-1.6.1.tar.gz", hash = "sha256:7ced2603d684e29c22b4cd507d1e15a1907e91b86259924b8cfe480d80553b43"},
+]
+
+[package.dependencies]
+ds-store = ">=1.1.0"
+mac-alias = ">=2.0.1"
+
+[package.extras]
+badge-icons = ["pyobjc-framework-Quartz (>=3.0.4)"]
+dev = ["pre-commit", "tox"]
+docs = ["sphinx", "sphinx-autobuild", "sphinx-rtd-theme"]
+test = ["pytest", "pytest-cov", "pytest-tldr"]
+
+[[package]]
+name = "ds-store"
+version = "1.3.1"
+description = "Manipulate Finder .DS_Store files from Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "ds_store-1.3.1-py3-none-any.whl", hash = "sha256:fbacbb0bd5193ab3e66e5a47fff63619f15e374ffbec8ae29744251a6c8f05b5"},
+    {file = "ds_store-1.3.1.tar.gz", hash = "sha256:c27d413caf13c19acb85d75da4752673f1f38267f9eb6ba81b3b5aa99c2d207c"},
+]
+
+[package.dependencies]
+mac-alias = ">=2.0.1"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+docs = ["sphinx", "sphinx-autobuild", "sphinx-rtd-theme"]
+test = ["pytest", "pytest-cov", "pytest-tldr"]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.1.3"
 description = "Backport of PEP 654 (exception groups)"
@@ -138,6 +178,22 @@ files = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
     {file = "idna-3.4.tar.gz", hash = "sha256:814f528e8dead7d329833b91c5faa87d60bf71824cd12a7530b5526063d02cb4"},
 ]
+
+[[package]]
+name = "mac-alias"
+version = "2.2.2"
+description = "Generate/parse Mac OS Alias records from Python"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "mac_alias-2.2.2-py3-none-any.whl", hash = "sha256:504ab8ac546f35bbd75ad014d6ad977c426660aa721f2cd3acf3dc2f664141bd"},
+    {file = "mac_alias-2.2.2.tar.gz", hash = "sha256:c99c728eb512e955c11f1a6203a0ffa8883b26549e8afe68804031aa5da856b7"},
+]
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+docs = ["sphinx", "sphinx-autobuild", "sphinx-rtd-theme"]
+test = ["pytest", "pytest-cov", "pytest-tldr"]
 
 [[package]]
 name = "outcome"
@@ -315,4 +371,4 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10.5"
-content-hash = "38a146cd4929fd843ee301d8f2b3e796f8282e4f4c42cdb29fcb866f374431d7"
+content-hash = "9c3c8afd9c144ae965614ce6c54d62fc514a1250972b5e8a0dad0a3a8beaa124"
