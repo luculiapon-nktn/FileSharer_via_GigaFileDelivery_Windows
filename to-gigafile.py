@@ -63,7 +63,7 @@ except InvalidArgumentException as e:
     sys.exit()
 
 #アップロードするファイルのサイズが大きい場合は下記タイムスリープを有効にすることで解決する場合があります。
-# time.sleep(30)
+time.sleep(30)
 
 try:
     #変数elemにCSSセレクタで.file_info_url_box及び.clearfixと指定された要素を格納
