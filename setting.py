@@ -13,9 +13,9 @@ import plistlib
 #   dmgbuild -s settings.py -D app=/path/to/My.app "My Application" MyApp.dmg
 
 # .. Useful stuff ..............................................................
-defines = {}
+defines = {"app":"", "format":"", "size":""}
 
-application = defines.get("app", "/System/Applications/TextEdit.app")  # noqa: F821
+application = defines.get("app", "/System/Applications/FileSharer_via_GigaFileDelivery.app")  # noqa: F821
 appname = os.path.basename(application)
 
 
