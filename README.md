@@ -129,7 +129,8 @@ __ここでは基本的なことしか述べていないので、わかる人は
    ```
    ssh-keygen -t rsa
    ```
-   すると、下記のような３つの質問をされます。何も入力せずに３回Return(Enter)キーを押しましょう。
+   すると、下記のような３つの質問をされます。何も入力せずに３回Return(Enter)キーを押しましょう。  
+   （your_user_nameのところはご自身のPCの名前で表示されるはずです。）
    ```
    Generating public/private rsa key pair.
    Enter file in which tosave the key (/Users/your_user_name/.ssh/id_rsa):
@@ -157,9 +158,9 @@ __ここでは基本的なことしか述べていないので、わかる人は
 ## 環境構築
 1. git cloneする  
    まずはFileSharerを保存するための適当なディレクトリにあたりをつけてください。  
-   今回、筆者はC:\Users\your_user_nameにFileSharer_via_GigaFileDelivery_Windowsを保存します。  
+   今回、筆者はC:\Users\your_user_nameにFileSharer_via_GigaFileDelivery_Windowsを保存します。（your_user_nameはご自身のPCの名前を意味しています。）  
    Visual Studio Codeを開きましょう。ターミナル > 新しいターミナル を選択します。  
-   画面下部にターミナルが出現しました。出現したターミナルにて下記コマンドを実行しましょう。
+   画面下部にターミナルが出現しました。出現したターミナルにて下記コマンドを実行しましょう。（your_user_nameはご自身のPCの名前に置き換えて実行してください。）
    ```
    cd C:\Users\your_user_name
    ```
@@ -188,7 +189,8 @@ __ここでは基本的なことしか述べていないので、わかる人は
 SendToフォルダが開きました。この中にbatファイルを作成します。  
 SendToフォルダ配下で右クリックをし、「新規作成」から「テキストドキュメント」を選択します。
 ファイル名は「FileSharer.txt」としておきましょう。  
-ファイルはメモ帳で開くことができるはずです。開いたら下記コマンドを書き込みましょう。
+ファイルはメモ帳で開くことができるはずです。開いたら下記コマンドを書き込みましょう。  
+（your_user_nameはご自身のPCの名前に置き換えて実行してください。）
 ```
 C:
 cd C:\Users\your_user_name\FileSharer_via_GigaFileDelivery_Windows\
